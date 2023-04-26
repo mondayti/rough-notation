@@ -11,6 +11,12 @@ export declare type FullPadding = [number, number, number, number];
 export declare type RoughPadding = number | [number, number] | FullPadding;
 export declare type BracketType = 'left' | 'right' | 'top' | 'bottom';
 export interface RoughAnnotationConfig extends RoughAnnotationConfigBase {
+    scala: number;
+    sectionRect: any;
+    left: number;
+    top: number;
+    width: number;
+    height: number;
     type: RoughAnnotationType;
     multiline?: boolean;
     rtl?: boolean;
