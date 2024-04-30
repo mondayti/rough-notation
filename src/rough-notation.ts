@@ -63,7 +63,7 @@ class RoughAnnotationImpl implements RoughAnnotation {
       setTimeout(() => {
         this._resizing = false;
         if (this._state === 'showing') {
-          if (this.haveRectsChanged()) {
+          if (this._config.resize && this.haveRectsChanged()) {
             this.show();
           }
         }

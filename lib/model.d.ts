@@ -21,6 +21,7 @@ export interface RoughAnnotationConfig extends RoughAnnotationConfigBase {
     type: RoughAnnotationType;
     multiline?: boolean;
     rtl?: boolean;
+    resize: boolean;
 }
 export interface RoughAnnotationConfigBase {
     animate?: boolean;
