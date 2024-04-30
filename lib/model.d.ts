@@ -13,6 +13,7 @@ export declare type BracketType = 'left' | 'right' | 'top' | 'bottom';
 export interface RoughAnnotationConfig extends RoughAnnotationConfigBase {
     scala: number;
     sectionRect: any;
+    margin: number;
     left: number;
     top: number;
     width: number;

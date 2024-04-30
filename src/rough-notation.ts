@@ -244,7 +244,7 @@ class RoughAnnotationImpl implements RoughAnnotation {
     const rect2 = bounds;
 
     return {
-      x: ((this._config.left - 7) - ((((rect1.left - this._config.sectionRect?.x) / this._config.scala) - 360) - 7)) || ((rect2.x || rect2.left) - (rect1.x || rect1.left)),
+      x: ((this._config.left - 7) - ((((rect1.left - this._config.sectionRect?.x) / this._config.scala) - (this._config.margin || 360)) - 7)) || ((rect2.x || rect2.left) - (rect1.x || rect1.left)),
       y: ((this._config.top) - ((rect1.top - this._config.sectionRect?.y) / this._config.scala)) || ((rect2.y || rect2.top) - (rect1.y || rect1.top)),
       w: this._config.width || rect2.width,
       h: this._config.height || rect2.height,
